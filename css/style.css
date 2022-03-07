@@ -1,0 +1,116 @@
+html, body {
+   margin: 0;
+   padding: 0;
+}
+
+.jumbotron {
+   background-image: url('../img/02.jpg');
+   background-attachment: fixed;
+   background-size: cover;
+   /* background-position: 15% -5px; */
+   background-repeat: no-repeat;
+   padding-top: 7.5em;
+   height: 550px;
+   color: #eee;
+   text-shadow: 1px 1px 5px rgba(0,0,0,.7);
+   overflow: hidden;
+   }
+.jumbotron img {
+   width: 200px;
+   border: 5px solid #ddd;
+   box-shadow: 1px 5px 15px 1px rgba(0,0,0,.7);
+}
+.jumbotron p {
+   font-weight: 300;
+}
+
+hr {
+   width: 250px;
+   border: 1px solid #888;
+}
+
+section {
+   min-height: 350px;
+}
+
+.portfolio {
+   background: #eee;
+}
+.portfolio .thumbnail {
+   opacity: 0;
+   transform: rotateY(180deg) translate(0, -55px);
+   transition: .8s;
+}
+.portfolio .thumbnail.muncul {
+   opacity: 1;
+   transform: translate(0,0);
+}
+
+footer {
+   background: #333;
+   padding: 3.5em 1em;
+   margin-top: 3.5em;
+   width: 100% !important;
+   color: #fff;
+   box-sizing: border-box;
+   font-size: 1em;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.main-sc {
+   width: 95% !important;
+   padding: 15px ;
+   /* background: #000; */
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   margin: 1em auto;
+   order: -1;
+}
+.social {
+   width: 80px;
+   padding: .8em;
+   background: #ddd;
+   margin: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   text-align: center;
+   transition: 1s .3s;
+}
+
+.social:hover {
+   background: #1e7bce;
+   background: rgb(250,51,246);
+background: radial-gradient(circle at 30% 107%, #105bbe 0%, #105bbe 5%, #1e6bbe 45%,#1f7bce 60%,#208bde 90%);
+   transform: rotateX(380deg);
+}
+
+.social a {
+   color: #fff;
+   text-decoration: none;
+}
+
+.fb {
+   background: #105bbe;
+}
+.tw {
+   background: #2fa4ec;
+}
+.red {
+   background: #d71e1f;
+}
+.dbb {
+   background: #e92290;
+}
+.insta {
+   
+   background: #d6249f;
+   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+   background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+   background: -moz-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
